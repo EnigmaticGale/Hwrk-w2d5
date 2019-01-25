@@ -9,6 +9,10 @@ class Guest
     @fave_song = fave_song
   end
 
+  def pay_fee(entry_fee)
+    @cash -= entry_fee  
+  end
+
 
 
 

@@ -8,7 +8,9 @@ class Song
     @duration = 180
   end
 
-
+  def play
+    return "Now playing: #{@title}"
+  end
 
 
 

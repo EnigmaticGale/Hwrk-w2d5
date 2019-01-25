@@ -14,4 +14,8 @@ class TestSong < MiniTest::Test
     assert_equal(180, @song_1.duration)
   end
 
+  def test_play
+    assert_equal("Now playing: Song Title", @song_1.play)
+  end
+
 end
