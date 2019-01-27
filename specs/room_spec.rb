@@ -76,6 +76,7 @@ Duration: 180", @room_1.list_song_details(1))
     @room_1.customer_buys_room(@guest_1)
     assert_equal(@guest_1, @room_1.current_guests[0])
     assert_equal(90, @guest_1.cash)
+    assert_equal(10, @room_1.till_balance)
   end
 
   def test_customer_buys_room__room_full
